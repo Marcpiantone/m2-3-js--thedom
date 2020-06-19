@@ -31,22 +31,22 @@ for(i=0;i<FROGS;i++){
     // Append new elements to li (lanes)
     track.appendChild(lane);
 
-    // Select randomly frogs from frogStable.js
-    let random = Math.floor(Math.random()*6);
+    //Select randomly frogs from frogStable.js
+    let random = Math.floor(Math.random()*5);
     let frog = frogStable[random];
 
-    // 3. Create span (<- THESE ARE THE FROGS) and add it to the li
+    //3. Create span (<- THESE ARE THE FROGS) and add it to the li
     let contester = document.createElement('span');
     contester.innerHTML = `${frog.name} ${frog.number}`;
     contester.className = `frog`;
     lane.appendChild(contester);
 
-    // Push the frogs to an array of racers (?)
-    let racers = [];
-    racers.push(frog);
+    // // Push the frogs to an array of racers (?)
+    // let racers = [];
+    // racers.push(frog);
 
-    // Reset progress of racers
-    racers[lane].progress = 0;
+    // // Reset progress of racers
+    // racers[lane].progress = 0;
 }
 
 

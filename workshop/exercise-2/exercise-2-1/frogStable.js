@@ -1,4 +1,4 @@
-const frogStable = [
+  const frogStable = [
   {
     name: 'Hopper',
     color: 'blue',
