@@ -39,6 +39,7 @@ for(i=0;i<FROGS;i++){
     let contester = document.createElement('span');
     contester.innerHTML = `${frog.name} ${frog.number}`;
     contester.className = `frog`;
+    contester.style.background = `${frog.color}`;
     lane.appendChild(contester);
 
     // // Push the frogs to an array of racers (?)
