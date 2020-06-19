@@ -35,7 +35,7 @@ for (i = 0; i < FROGS; i++) {
 
   //2.1 Create span (<- THESE ARE THE FROGS) and add it to the li
   let contester = document.createElement("span");
-  contester.innerHTML = `${frog.name} ${frog.number}`;
+  contester.innerText = `${frog.name} ${frog.number}`;
   contester.style.background = `${frog.color}`;
   contester.className = `frog`;
   contester.progress = 0;
@@ -57,7 +57,11 @@ let jumpFunction = function () {
 };
 
 let winnerIs = function (racer) {
-  console.log(racer.innerHTML + " has won!");
+  winner = document.getElementById("winner");
+  let display = racer.innerText + " has won!";
+  console.log(racer.innerText + " has won!");
+  winner.innerHTML = `${display}`;
+  winner.style.fontSize = "3em";
   racer.style.left = "100%";
   clearInterval(raceTimer);
 };
