@@ -59,7 +59,6 @@ let jumpFunction = function () {
 let winnerIs = function (racer) {
   winner = document.getElementById("winner");
   let display = racer.innerText + " has won!";
-  console.log(racer.innerText + " has won!");
   winner.innerHTML = `${display}`;
   winner.style.fontSize = "3em";
   racer.style.left = "100%";
